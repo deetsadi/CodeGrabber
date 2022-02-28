@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 2,
+    "name" : "CodeGrabber",
+    "description" : "Pulls code from Youtube videos at the click of a button!",
+    "version" : "1.0",
+    "icons" : {
+        "16" : "./images/icon-16.png",
+        "48" : "./images/icon-48.png",
+        "128" : "./images/icon-128.png"
+    },
+    "content_scripts" : [{
+        "matches" : ["https://www.youtube.com/*"],
+        "js" : ["./scripts/main.js"]
+    }],
+    "background" : {
+        "scripts" : ["./scripts/require.js","./scripts/background.js"],
+        "persistent": false
+    },
+    "browser_action" :  {
+        "default_icon" : "./images/icon-16.png"
+    },
+    "permissions": [
+        "desktopCapture",
+        "tabs",
+        "downloads",
+        "activeTab",
+        "notifications",
+        "http://127.0.0.1:5000/getText"
+    ],
+    "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.4.1.min.js https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js; object-src 'self'"
+}

@@ -1,0 +1,1 @@
+tesseract ../screenshot_info/code_panel_thresh.jpeg ../screenshot_info/ocr_text

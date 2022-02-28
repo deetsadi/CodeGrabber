@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "child-process": "^1.0.2",
+    "node-fetch": "^2.6.1",
+    "python-shell": "^3.0.1",
+    "tesseract.js": "^2.1.5"
+  }
+}
