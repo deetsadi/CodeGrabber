@@ -146,9 +146,9 @@ def get_ocr_text(image_url):
     code_panel_thresh = cv2.adaptiveThreshold(code_panel,255,cv2.ADAPTIVE_THRESH_MEAN_C,\
                 cv2.THRESH_BINARY,11,2)
     code_panel_thresh = cv2.resize(code_panel_thresh, (int(cropped.shape[1]*1.5), int(cropped.shape[0]*1.5)))
-    cv2.imwrite("../code_panel_thresh.jpeg", code_panel)
+    cv2.imwrite("../screenshot_info/code_panel_thresh.jpeg", code_panel)
     subprocess.call(["sh", "ocr.sh"])
-    with open("./ocr_text.txt", 'r') as f:
+    with open("../screenshot_info/ocr_text.txt", 'r') as f:
         return "\n".join(f.readlines())
 
 #get_ocr_text("./image.jpeg")

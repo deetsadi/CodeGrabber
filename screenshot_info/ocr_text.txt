@@ -1,49 +1,11 @@
  
+import tensorflow as tf
+from tensorflow.keras.models import Sequential we.
+from tensorflow.keras.layers import Densel, Dropouti, [LSTM |#Cu@AK—.
 
-EXPLORER © popuphtml @ JS popupjs
+ 
+mnist = tf.keras.datasets.mnist
+(x_train, y_train)|,(x_test, y_test) = mnist.load_data()
 
-OPEN EDITORS 1UNSAVED
-© © popuphtmi
-
-48. popups
-TRAVERSY-LAUNCHER
-> aii images
-
-i icon_128.png
-
-i iconpng
-
-() manifestjson
-
-'§ popuphtmi
-
-48 popupjs
-
-> pl
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Traversy Launcher</title>
-<link rel="stylesheet" href="">
-
-</head>
-
-<body>
-
-</body>
-</html>
-
-8:26 / 25:23
-
-«e &
-
-* GO §)
-
-Po
-L4
+print(x_train. shape)
+print(x_train)

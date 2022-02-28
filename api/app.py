@@ -2,7 +2,7 @@ import base64
 import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from api.get_text import get_ocr_text
+from get_text import get_ocr_text
 
 app = Flask(__name__)
 CORS(app)
