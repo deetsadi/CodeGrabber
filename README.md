@@ -3,7 +3,7 @@
 **Tesseract based chrome extension which performs code recognition from Youtube videos.**
 
 ## Description/Features
-Developers often watch Youtube tutorials to learn a variety of programming concepts. Unfortunately, the coding materials in the video are sometimes not provided by the uploader, leading to viewers having to manually type out the code as they follow along, leading to a longer amount of time spent doing tedious code mirroring. 
+Developers often watch Youtube tutorials to learn a variety of programming concepts. Unfortunately, the coding materials in the video are sometimes not provided by the uploader, meaning viewers often have to manually type out the code as they follow along, leading to a longer amount of time spent doing tedious code mirroring. 
 **CodeGrabber** is a chrome extension which addresses this issue. With a click of a button, users can copy the code in their Youtube video player to their clipboard, leading to more time learning and less time copying. 
 
 Note: Since not all Youtube videos will have a similar IDE visually and Tesseract is not the best OCR service, there can be some minor errors in the code recognized. However, these are often just spelling mistakes and are easily fixed.
